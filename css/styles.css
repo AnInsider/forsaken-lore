@@ -2,7 +2,36 @@ body {
   background-color: black;
   color: white;
   font-family: sans-serif;
-  text-align: center;
+
+  /* Center everything in middle */
+  display: flex;
+  flex-direction: column;     /* stack items vertically */
+  justify-content: center;    /* center vertically */
+  align-items: center;        /* center horizontally */
+  min-height: 100vh;          /* take up full screen height */
   margin: 0;
-  padding: 0;
+}
+
+.img-button {
+  display: inline-block;
+  margin: 20px;
+}
+
+.img-button img {
+  border: 2px solid white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.img-button img:hover {
+  transform: scale(1.05);
+  border-color: red;
+}
+
+.title-img {
+  max-width: 500px;  /* adjust as needed */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px; /* centers it with space below */
 }
